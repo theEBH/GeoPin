@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-import { Location } from '@/entities/Location';
-import { User } from '@/entities/User';
-import MapPicker from '../components/map/MapPicker.js';
-import { Alert, AlertDescription } from "@/components/ui/alert";
-import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
+import { Location } from '@entities/Location.js';
+import { User } from '@entities/User.js';
+import MapPicker from '@components/map/MapPicker.jsx';
+import { Alert, AlertDescription } from "@components/ui/alert";
+import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@components/ui/card";
 import { AlertCircle, MapPin, CheckCircle, Loader2 } from 'lucide-react';
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@components/ui/badge";
 
 export default function GeoreferencingPage() {
   const [currentLocation, setCurrentLocation] = useState(null);
